@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Hello World! to screen</title>
+<script type="text/javascript" charset="utf-8">
+	window.onload=hello; //	object property approach
+
+	function hello(){
+	var msg = "Hello World!";
+	document.open();
+	document.write(msg);
+	document.close();
+	}
+</script>
+</head>
+<!--
+   -<body onload="hello()"> [>event handler approach<]
+   -->
+<body> <!--object property approach-->
+	<p>Hi</p>
+</body>
+</html>
