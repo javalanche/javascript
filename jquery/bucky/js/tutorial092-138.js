@@ -200,3 +200,26 @@ $(function () {
 		$('#paragraph_122').unhighlight().highlight(search_term);
 	});
 });
+
+
+/*************************************************
+ *  Tutorial 123-124: Passing options to plugin  *
+ *************************************************/
+(function($){
+	$.fn.myHighlight = function (e){
+		var settings = {
+			'highlight': null,
+			'text_color': 'black'
+		};
+		//var settings = {'highlight': 'red'};
+		if (e) {
+			$.extend(settings, e);
+		}
+		alert(settings['highlight']);
+		$(this).css('background-color', settings['highlight']);
+		$(this).css('color', settings['text_color']);
+	}
+})(jQuery);
+$(function () {
+	$('#strong_124').myHighlight({highlight: 'yellow', text_color: 'blue'});
+});
