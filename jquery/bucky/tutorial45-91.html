@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>45-91</title>
+<link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+</head>
+<body>
+
+	<p>Tutorial 45 and 46 Character Counting Remaining on Textarea</p>
+	<textarea name="tutorial45" rows="8" cols="40" maxlength="55" id="tutorial45"></textarea>
+	<div id="tutorial45_feedback"></div>
+	<br /> <br />
+
+	<p>Tutorial 47: Hide/Show a DIV</p>
+	<a href="#" id="hideshow">Hide</a>
+	<div id="message" class="message">
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+		tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+		vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+		no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	</div>
+
+	<p>Tutorial 48-51: Hover over description</p>
+	<div id="coordinate"></div>
+	<a class="hover" href="http://www.google.com" hovertext="Google, a powerful search engine">google</a>
+	<a class="hover" href="http://www.amazon.com" hovertext="A place to go shopping">Amazon</a>
+	<!--if this is placed above the links the it is overlayed bc its position is absolute-->
+	<div id="hover-example">
+		if this is placed above the links the it is overlayed bc its position is absolute
+	</div>
+	<div id="hover-div">
+		Notice this overlay, until...
+	</div>
+	<p>	<img src="./images/javalanche-175x175.jpg" alt="my alias pic: javalanche" class="hover" hovertext="my alias pic: javalanche"/></p>
+
+	<p>Tutorial 52: html method to do copy</p>
+	<p id="52-paste"></p>
+	<input type="button" name="copy-button" id="copy-button" value="Copy" />
+	<p id="52">Some stuff to copy</p>
+	<br /> <br />
+
+	<p>Tutorial 53: val method to do copy, binding method, and concat diff functions to val()</p>
+	<input type="text" name="53-name" id="53-name" value="" />
+	<input type="button" name="53-button" id="53-button" value="Display" />
+	<div id="53-area"></div>
+	<div id="53-bind"></div>
+	<div id="53-length"></div>
+	<br /> <br />
+
+	<p>Tutorial 54: attr</p>
+	<p> <a id="54-link" href="http://www.phpacademy.org" target="_blank">Anchor Text</a></p>
+	<p id="54-attr-href"></p>
+	<p id="54-attr-target"></p>
+	<br /> <br />
+
+	<p>Tutorial 55: addClass</p>
+	<p class="bold">bold text with class="bold"</p>
+	<p> <input type="button" name="55-button" id="55-button" value="Apply Class" /></p>
+	<p id="55-sometext">Some text</p>
+	<br /> <br />
+
+	<p>Tutorial 56: removeClass</p>
+	<span id="56-sometext">This is some text</span>
+	<br /> <br />
+
+	<p>Tutorial 57: toggleClass, toggle() does not need a click() event but toggleClass() does</p>
+	<span id="57-sometext">This is some text</span>
+	<input type="text" name="57-input" id="57-input" value="" />
+	<br /> <br />
+
+	<p>Tutorial 58-59: removeAttr(), could not get this one working would not change state when unchecked</p>
+	<p> <input type="checkbox" name="58-agree" id="58-agree" /> I agree</p>
+	<input type="button" name="58-continue" id="58-continue" value="Continue" disabled="disabled"/>
+	<br /> <br />
+
+	<p>Tutorial 60-61: each</p>
+	<p>seems like .each() can only work on elements not ids or classes</p>
+	<p>this div used text() instead of html() to output but don't know the difference</p>
+	<p>
+		<input type="text" name="" id="60-names" value="" />
+		<input type="text" name="" id="60-names" value="" />
+		<input type="button" name="60-combine" id="60-combine" value="Combine" />
+	</p>
+	<div id="60-output"></div>
+	<br /> <br />
+
+	<p>Tutorial 62-63: next/nextAll and prev/prevAll</p>
+	<ul class='62-names'>
+		<li>Alex</li>
+		<li>Billy</li>
+		<li>Dale</li>
+		<li>Ashley</li>
+	</ul>
+	<br />
+	<ul class='62-menu'>
+		<li>Alex</li>
+		<li>Billy</li>
+		<li>Dale</li>
+		<li>Ashley</li>
+	</ul>
+	<br /> <br />
+
+	<p>Tutorial 68-69: Fade In and Out, notice this needs style="display: none"</p>
+	<div id="68-alert" class="highlight"></div>
+	<div id="69-message" class="highlight"></div>
+	<img id="68-image" src="./images/javalanche-175x175.jpg" alt="javalanche" style="display: none"/>
+	<input type="button" name="69-hide" id="69-hide" value="Hide" />
+	<input type="button" name="69-show" id="69-show" value="Show" />
+	<br /> <br />
+
+	<p>Tutorial 70: Fade Toggle</p>
+	<img id="70-image" src="./images/javalanche-175x175.jpg" alt="javalanche" />
+	<input type="button" name="70-fade" id="70-fade" value="Toggle Fade" />
+	<br /> <br />
+
+	<p>Tutorial 71-74: Slide Down, Up, Toggle, Stop</p>
+	<div id="message-71">
+		<p>We see you're not logged in. Do you want to <a href="#">sign up?</a></p>
+		<p id="hide-72">No, thanks (click me)</p>
+	</div>
+	<input type="button" name="toggle-73" id="toggle-73" value="Toggle" />
+	<input type="button" name="stop-74" id="stop-74" value="Stop/Pause/Play" />
+	<br /> <br />
+
+	<p>Tutorial 75: Delay</p>
+	<p id="sample-75">Here I am a sample piece of text</p>
+	<input type="button" name="go-75" id="go-75" value="Delay, try me" />
+
+	<p>Tutorial 76-77: fadeTo</p>
+	<img id="image-76" src="./images/javalanche-175x175.jpg" alt="javalanche" />
+	<input type="button" name="fade-76" id="fade-76" value="Fade me" />
+	<p>this showed me the difference between ids and classes</p>
+	<p>if want to use all elements in javascript code logic needs to be a class</p>
+	<p>otherwise, if IDs, then will just that the first one</p>
+	<img class="image-77" src="./images/javalanche-175x175.jpg" alt="javalanche" />
+	<img class="image-77" src="./images/javalanche-175x175.jpg" alt="javalanche" />
+	<br /> <br />
+
+	<p>Tutorial 78: Append</p>
+	<input type="button" name="button-78" id="button-78" value="Append" />
+	<p id="area-78"></p>
+	<p class="class-area-78"></p>
+	<p class="class-area-78"></p>
+	<input type="text" name="name-78" id="name-78" value="" />
+	<input type="button" name="name-button-78" id="name-button-78" value="Submit" />
+	<p id="sentence-78">Your name is: </p>
+	<br /> <br />
+
+	<p>Tutorial 79: AppendTo</p>
+	<p> <input type="button" name="appendTo-79" id="appendTo-79" value="Append To" /></p>
+	<p>Below all a p elements except the span</p>
+	<p id="paragraph1-79">(1)Javier</p>
+	<p id="paragraph2-79">(2)My name is: </p>
+	<span id="paragraph3-79">Javier (I am a span element)</span>
+	<p id="paragraph4-79">My name is: </p>
+	<br /> <br />
+
+	<p>Tutorial 80: clone()</p>
+	<p> <input type="button" name="appendTo-80" id="appendTo-80" value="Append To" /></p>
+	<p>Below all a p elements except the span</p>
+	<span id="paragraph3-80">Javier (I am a span element)</span>
+	<p id="paragraph4-80">My name is: </p>
+	<br /> <br />
+
+	<p>Tutorial 81-82: width/height</p>
+	<div id="box-81"></div>
+	<br />
+	<div id="box2-81"></div>
+	<br />
+	<div id="box3-81"></div>
+	<br />
+	<p>this is how we always fit width and height in jQuery</p>
+	<img id="fit_82" src="./images/history-of-Life-on Earth.png" alt="history of life on earth" />
+	<br /> <br />
+
+	<p>Tutorial 83: scrollTop</p>
+	<p>
+		<textarea name="textarea-83" id="textarea-83"> 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</textarea>
+	</p>
+	<div id="feedback-83"></div>
+	<div id="feedback2-83"></div>
+	<br /> <br />
+
+	<p>Tutorial 84: adding a dropdown menu</p>
+	<p> 
+		<a href="#" class="link_84">Bread</a>
+		<a href="#" class="link_84">Sugar</a>
+		<a href="#" class="link_84">Tea</a>
+	</p>
+	
+	<select name="list_84" id="list_84" ></select>
+	<br /> <br />
+
+	<p>Tutorial 85-86: Placing DIV in very center of window, responsively</p>
+	<div id="verycenter_85"></div>
+
+	<p>Tutorial 87-88: Minimum text field length</p>
+	<p>
+		 5: <input type="text"  class="inputs_87" minlength="5" />
+	</p>
+	<p>
+		10: <input type="text"  class="inputs_87" minlength="10" />
+	</p>
+		<br /> <br />
+
+	<p>Tutorial 89: Scroll to top</p>
+	<p>in the end I don't think this one is working the way intended cause I don't want to scroll to top of document</p>
+	<a id="mememe" name="top"></a>
+
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+	tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+	vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+	no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	
+		
+	
+	<p> <a class="top_89" href="#top">Go to top, but cutoff whitespace above text</a></p>	
+	<br /> <br />
+
+	<p>Tutorial 90-91: Enabling checkbox after scrolling</p>
+	<div id="feedback_90"></div>
+	<p>
+		<input type="checkbox" name="agree_90" id="agree_90" />
+		I agree to the terms and conditions
+	</p>
+	<p>
+		<textarea  id="terms_90" rows="8" cols="40">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+			tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+			vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+			no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+			tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+			vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+			no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+			tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+			vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+			no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+			tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+			vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+			no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+			tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+			vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+			no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+			tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+			vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+			no sea takimata sanctus est Lorem ipsum dolor sit amet.
+		</textarea>
+	</p>
+
+
+	<script src="./bower_components/jquery-1.6.2/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/tutorial45-91.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

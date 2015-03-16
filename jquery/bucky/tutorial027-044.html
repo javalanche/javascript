@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>27</title>
+<link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+</head>
+<body>
+	<p>Tutorial 27 and 28</p>
+	Font size:
+	<a href="#" id="smaller">Smaller</a>
+	<a href="#" id="bigger">Bigger</a>
+	<div id="tutorial27">
+		<p>This is some text</p>
+		<p>This is some more text</p>
+	</div>
+	<br /> <br />
+
+	<p>Tutorial 29 and 30</p>
+	<form class="" action="#" method="post" enctype="multipart/form-data">
+		<input type="file" name="" id="file" value="" />
+		<input type="submit" name="submit29" id="submit29" value="Upload" disabled="disabled" />	
+	</form>
+	<br /> <br />
+
+	<p>Tutorial 31</p>
+	<!--only one or the other can be used to make hide button or hide link-->
+	<!--<input type="button" name="hide" id="hide" value="Hide" />-->
+	<a href="#" id="hide">Hide me</a>
+	<p id="message">This is a message</p>
+	<br /> <br />
+
+	<p>Tutorial 32</p>
+	<a href="#" id="menu_link">Menu</a>
+	<div id="menu" style="display: none;">
+		<a href="">Programs</a>
+		<a href="">Settings</a>
+		<a href="">Log off</a>
+	</div>
+	<br /> <br />
+
+	<p>Tutorial 33</p>
+	<input type="text" name="user_text" id="user_text" value="" />
+	<span id="user_text_feedback"></span>
+	<br /> <br />
+
+	<p>Tutorial 34</p>
+	<select name="" id="list">
+		<option value="one">one</option>
+		<option value="two">two</option>
+		<option value="three">three</option>
+		<option value="four">four</option>
+	</select>
+	<span id="list_feedback"></span>
+	<br /> <br />
+
+	<p>Tutorial 35</p>
+	<!--note: method="post" prevented from working-->
+	<!--<form id="signup_form" method="post">-->
+	<form id="signup_form">
+		<p>Email: <input type="email" name="" id="user_email" value="" /> </p>
+		<p> <input type="submit" name="" id="" value="Sign up" /></p>
+	</form>
+	<!--note: cannot leave ANY space between >< as will overwrite the id reference-->
+	<div id="signup_feedback"></div>
+	<br /> <br />
+
+	<p>Tutorial 36: Toggle</p>
+	<div id="click_event"></div>
+	<a href="#" id="click_me">Click me</a>
+	<br /> <br />
+
+	<p>Tutorial 37: Hover</p>
+	<a href="#" id="menu_videos">Videos</a>
+	<a href="#" id="menu_code">Code</a>
+	<a href="#" id="menu_forum">Forum</a>
+	<div id="menu_feedback"></div>
+	<br /> <br />
+
+	<p>Tutorial 38: Scroll</p>
+	<div id="some_feedback"></div>
+	<textarea id="some_text" rows="7" cols="25">
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+		tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+		vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+		no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	</textarea>
+	<br /> <br />
+
+	<p>Tutorial 39: Select</p>
+	<input type="text" name="some_text39" id="some_text39" value="" />
+	<span id="some_feedback39"></span>
+	<br /> <br />
+
+	<p>Tutorial 40: Focus In (and click)</p>
+	<p>Example with click(): try tabbing and clicking betwen the two</p>
+	Your name:
+	<input type="text" name="name40" id="name40" value="" />
+	<span id="name_span"></span>
+	<br />
+	Your age:
+	<input type="text" name="age40" id="age40" value="" />
+	<span id="age_span"></span>
+	<br /> <br />
+
+	<p>Example with Focus In only: try tabbing and clicking betwen the two</p>
+	Your name:
+	<input type="text" name="name-focusin" id="name-focusin" value="" />
+	<span id="name_span-focusin"></span>
+	<br />
+	Your age:
+	<input type="text" name="age-focusin" id="age-focusin" value="" />
+	<span id="age_span-focusin"></span>
+	<br /> <br />
+
+	
+	<p>Tutorial 41: Focus out (and focusin)</p>
+	<p>Example with Focus In and Out together: try tabbing and clicking betwen the two</p>
+	Your name:
+	<input type="text" name="name-focus" id="name-focus" value="" />
+	<span id="name_span-focus"></span>
+	<br />
+	Your age:
+	<input type="text" name="age-focus" id="age-focus" value="" />
+	<span id="age_span-focus"></span>
+	<br /> <br />
+	
+	<p>Tutorial 42: Bind()</p>
+	<p>mouse* method</p>
+	<a href="#" id="mouse">Link</a>
+	<p>bind method</p>
+	<a href="#" id="bind">Link</a>
+	<br /> <br />
+
+	<p>Tutorial 43 and 44: Live</p>
+	<p>after() method</p>
+	<input type="button" name="click" id="click" value="Click" class="duplicate" />
+	<p>live() method</p>
+	<input type="button" name="click" id="click" value="Click" class="live" />
+	<p>live() with input:file</p>
+	<input type="file" name="file43" id="file43" class="file43"/>
+
+
+	<script src="./bower_components/jquery-1.6.2/index.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="./bower_components/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="./js/tutorial027-044.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

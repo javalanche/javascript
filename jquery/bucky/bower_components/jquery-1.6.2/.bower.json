@@ -1,0 +1,15 @@
+{
+  "name": "jquery-1.6.2",
+  "_cacheHeaders": {
+    "ETag": "\"54499a47-39aaa\"",
+    "Last-Modified": "Fri, 24 Oct 2014 00:16:07 GMT",
+    "Content-Length": "236202",
+    "Content-Type": "application/x-javascript"
+  },
+  "_release": "e-tag:54499a47-",
+  "main": "index.js",
+  "_source": "http://code.jquery.com/jquery-1.6.2.js",
+  "_target": "*",
+  "_originalSource": "http://code.jquery.com/jquery-1.6.2.js",
+  "_direct": true
+}

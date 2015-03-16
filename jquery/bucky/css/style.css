@@ -1,0 +1,77 @@
+/*.table {*/
+.table, .table tr, .table td {
+	border: 1px solid black;
+}
+
+/*.highlight {*/
+	/*background-color: #f0f0f0;*/
+/*}*/
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.message {
+	width: 300px;
+	border: 10px solid #999;
+	padding: 10px;
+}
+
+#hover-example, #hover-div {
+	/*display: none;*/
+	position: absolute;
+	font-size: 14px;
+	background-color: #fff;
+	color: #404040;
+	border: 1px solid #999;
+	padding: 7px;
+	// proves that top and left will work in the js code
+	/*top: 20px;*/
+	/*left: 20px;*/
+}
+
+#message-71{
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	background: #000;
+	padding: 20px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+#box-81, #box2-81, #box3-81 {
+	background-color: #f0f0f0;
+	height: 100px;
+	width: 250px;
+}
+
+#textarea-83 {
+	height: 200px;
+	width: 350px;
+}
+
+#verycenter_85 {
+	height: 150px;
+	width: 250px;
+	background-color: black;
+	position: relative;
+	/*top: 100px;*/
+}
+
+#terms_90 {
+	height: 100px;
+	width: 400px;
+}
