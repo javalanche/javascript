@@ -215,7 +215,7 @@ $(function () {
 		if (e) {
 			$.extend(settings, e);
 		}
-		alert(settings['highlight']);
+		//alert(settings['highlight']);
 		$(this).css('background-color', settings['highlight']);
 		$(this).css('color', settings['text_color']);
 	}
@@ -223,3 +223,44 @@ $(function () {
 $(function () {
 	$('#strong_124').myHighlight({highlight: 'yellow', text_color: 'blue'});
 });
+
+
+
+/*************************************************
+ *  Tutorial 125-126: Plugin callback functions  *
+ *************************************************/
+(function($){
+	$.fn.countdown = function (e, callback){
+		var settings = {'from': 5};
+		if (e) {
+			$.extend(true, e, settings)
+		}
+		//alert(settings['from']);
+		this_global = $(this);
+		var current_time = settings['from'];
+		function countdownExecution() {
+			if (0 == current_time) {
+				clearInterval(interval);
+
+				// i don't understand the scoping of $(this) and this is an example 
+				// why do I not have to use this_global here??
+				// btw this_global also works just the same
+				callback.call($(this));
+			}
+			this_global.text(current_time);
+			current_time = current_time -1;
+		}
+		interval = setInterval(countdownExecution, 1000);
+	}
+})(jQuery);
+$(function () {
+	$('#countdown_125').countdown({from: 5}, function() {
+		alert("This is a callback from a plugin see\
+			  \nTutorial 125-126: Plugin callback functions");
+
+		// this puts at another window location
+		//window.location = 'https://www.google.com'
+	});
+});
+
+
