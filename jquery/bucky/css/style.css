@@ -51,6 +51,21 @@ ul {
 	color: #fff;
 	text-align: center;
 }
+.outer{
+	width: 0px; /* Or zero, or something very small */
+	margin: auto;
+	overflow: visible;
+	background: red; /* A color just for debug */
+}
+#message-71_extra{
+	margin-left: -350px
+	width: 700px;
+	background: #000;
+	padding: 20px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
 
 #box-81, #box2-81, #box3-81 {
 	background-color: #f0f0f0;
